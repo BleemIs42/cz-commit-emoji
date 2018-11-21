@@ -23,7 +23,7 @@ function getEmojiChoices({ types, symbol }) {
 
   return types.map((choice) => ({
     name: `${pad(choice.name, maxNameLength)}  ${choice.emoji}  ${choice.description}`,
-    value: `${symbol ? choice.emoji : choice.code} ${choice.name}`,
+    value: `${symbol ? choice.emoji : choice.code}  ${choice.name}`,
     code: choice.code
   }))
 }
@@ -78,10 +78,10 @@ function createQuestions(config) {
       }
     },
     {
-      type: config.scopes ? 'list' : 'input',
+      type: config.scopes.length ? 'list' : 'input',
       name: 'scope',
       message: 'Specify a scope:',
-      choices: config.scopes
+      choices: config.scopes && [...config.scopes, 'none']
     },
     {
       type: 'input',

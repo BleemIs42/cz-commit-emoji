@@ -1,6 +1,6 @@
 {
   "name": "cz-commit-emoji",
-  "version": "0.0.9",
+  "version": "1.0.0",
   "description": "Commitizen adapter formatting commit messages using emojis",
   "main": "index.js",
   "files": [

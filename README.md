@@ -16,7 +16,7 @@
 ## Install
 
 ```bash
-yarn add cz-commit-emoji --dev
+yarn add commitizen cz-commit-emoji --dev
 ```
 
 ## Usage

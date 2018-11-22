@@ -41,20 +41,6 @@ echo '{ "path": "cz-commit-emoji" }' > ./.czrc
 $ git cz
 ```
 
-## Customize
-
-By default `cz-commit-emoji` comes preconfigured with the [Gitmoji](https://gitmoji.carloscuesta.me/) types.
-
-But you can customize things on a project basis by adding a configuration section in your `package.json`:
-
-```json
-{
-  "config": {
-    "cz-commit-emoji": {}
-  }
-}
-```
-
 ### Types
 
 An [Inquirer.js] choices array:
